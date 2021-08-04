@@ -152,14 +152,6 @@ export default function Home() {
         </Head>
 
         <Layout>
-          <div id="fb-root"></div>
-          <script
-            async
-            defer
-            crossorigin="anonymous"
-            src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0"
-            nonce="98Z1r5fd"
-          ></script>
           <div className="text-center music-banner py-24 text-white">
             <h1 className="text-5xl pt-5  ">Welcome to Audio Party!</h1>
             <p className="pt-3 text-2xl">Share and discover music.</p>
