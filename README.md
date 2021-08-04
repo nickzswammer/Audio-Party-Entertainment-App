@@ -9,26 +9,26 @@ This application is hosted on Heroku and can be found here: https://audioparty.h
 Alternatively, to run this code on a local machine, 
 run the following commands in the terminal.
 
-1. Clone source code onto local machine
+### 1. Clone source code onto local machine
 
 `git clone https://github.com/nickzswammer/Audio-Party-Entertainment-App.git`
 
-2. Navigate to the root directory
+### 2. Navigate to the root directory
 
 `cd audio-party-entertainment-app`
 
-3. Install dependencies
+### 3. Install dependencies
 
 `npm install`
 
-4. Compile the code
+### 4. Compile the code
 
 `npm run build`
 
-#### 5. Run the local server
+### 5. Run the local server
 
 `npm run dev`
 
-#### 6. And that's it!
+### 6. And that's it!
 
 
