@@ -25,10 +25,10 @@ run the following commands in the terminal.
 
 `npm run build`
 
-# 5. Run the local server
+#### 5. Run the local server
 
 `npm run dev`
 
-# 6. And that's it!
+#### 6. And that's it!
 
 
