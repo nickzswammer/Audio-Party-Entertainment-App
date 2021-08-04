@@ -5,15 +5,16 @@ import { ChakraProvider } from "@chakra-ui/react";
 import "../styles/globals.css";
 import "../styles/bootstrap.min.css";
 import { Provider } from "@lyket/react";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <script
+      <Script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"
-      ></script>
+      ></Script>
 
       <link
         rel="apple-touch-icon"
