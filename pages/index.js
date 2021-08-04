@@ -20,7 +20,6 @@ import { FormLabel } from "@chakra-ui/form-control";
 import { Input } from "@chakra-ui/input";
 import { Button } from "@chakra-ui/button";
 import { Select } from "@chakra-ui/select";
-import { db } from "../firebaseClient";
 import { useState } from "react";
 import auth from "../firebaseClient";
 import { useEffect } from "react";
@@ -156,17 +155,17 @@ export default function Home() {
             <p className="pt-3 text-2xl">Share and discover music.</p>
           </div>
 
-          <div className="">
+          <div className="whitespace-normal	">
             {uploads.map((upload) => (
               <div
                 key={upload.id}
-                className="bg-white mx-48 p-11 shadow-md border-on-bottom  my-2"
+                className="bg-white mx-48 p-11 shadow-md border-on-bottom  my-2 md:mx-24 sm:mx-6"
               >
-                <div>
+                <div className="flex-container whitespace-normal media-smaller">
                   <div className="float-left pr-9 text-2xl">
                     <LikeButton id={upload.id} namespace={upload.songName} />
                   </div>
-                  <div className="text-blue-500 cursor-pointer hover:text-blue-800 inline-block">
+                  <div className="text-blue-500 cursor-pointer hover:text-blue-800 inline-block max-w-md">
                     <Link href={upload.songlink} passHref>
                       <h2 className="text-2xl mb-2">
                         {upload.songname} - {upload.artistName}
@@ -177,19 +176,20 @@ export default function Home() {
                   <div className="mb-3">
                     <p>From: {upload.username}</p>
                   </div>
-
-                  <ReactPlayer
-                    className="float-right relative bottom-16"
-                    width="800px"
-                    height="50px"
-                    controls="true"
-                    config={{
-                      file: {
-                        forceAudio: true,
-                      },
-                    }}
-                    url={upload.songlink}
-                  ></ReactPlayer>
+                  <div className="smaller--player">
+                    <ReactPlayer
+                      className="float-right relative bottom-16 "
+                      width="800px"
+                      height="50px"
+                      controls="true"
+                      config={{
+                        file: {
+                          forceAudio: true,
+                        },
+                      }}
+                      url={upload.songlink}
+                    ></ReactPlayer>
+                  </div>
                 </div>
               </div>
             ))}

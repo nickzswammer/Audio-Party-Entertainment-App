@@ -30,3 +30,13 @@ body {
 .border-on-bottom {
   border-bottom: 2px solid rgb(190, 190, 190);
 }
+
+@media (max-width: 1600px) {
+  .media-smaller {
+    display: flex;
+    flex-direction: column;
+  }
+  .smaller--player {
+    margin-top: 60px;
+  }
+}

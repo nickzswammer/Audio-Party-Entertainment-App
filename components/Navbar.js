@@ -95,13 +95,6 @@ export default function Navbar() {
         <div className="container-fluid">
           <Link href="/">
             <a className="navbar-brand">
-              <Image
-                src="/../public/favicon.ico"
-                alt=""
-                width="52"
-                height="52"
-                className="d-inline-block align-text-top"
-              ></Image>
               <div className="float-right pl-4 text-3xl pt-2">Audio Party</div>
             </a>
           </Link>
