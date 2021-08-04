@@ -198,7 +198,7 @@ export default function Navbar() {
             </div>
 
             <form className="d-flex">
-              <Link href="/">
+              <Link href="/" passHref>
                 <button
                   className="btn btn-secondary my-2 my-sm-0"
                   onClick={SignOut}
