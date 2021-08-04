@@ -1,4 +1,4 @@
-This is a Next.js entertainment app.
+This is a Next.js entertainment app created for posting and liking music.
 
 ## Web Application
 
