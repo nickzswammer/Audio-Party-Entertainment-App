@@ -30,7 +30,7 @@ export default function Login() {
         <h1 className="text-3xl">Log-in or Create an Account</h1>
         <form className="pt-12 inline-block	">
           <div className="form-group w-customlogin py-2">
-            <label for="email">
+            <label htmlFor="email">
               Email address <span className="text-red-600">*</span>
             </label>
             <input
@@ -47,7 +47,7 @@ export default function Login() {
             </small>
           </div>
           <div className="form-group  pt-8">
-            <label for="password">
+            <label htmlFor="password">
               Password <span className="text-red-600">*</span>
             </label>
             <input
