@@ -128,8 +128,9 @@ export default function Home() {
 
   const [uploads, setUploads] = useState([]);
 
-  const ref = firebase.firestore().collection("uploads");
   useEffect(() => {
+    const ref = firebase.firestore().collection("uploads");
+
     function getUploads() {
       ref.onSnapshot((querySnapshot) => {
         const items = [];
