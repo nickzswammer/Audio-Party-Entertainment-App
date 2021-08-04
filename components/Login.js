@@ -21,7 +21,12 @@ export default function Login() {
         <title>Audio Party - Login or Sign in</title>
       </Head>
       <div className="text-center pt-20">
-        <Image src="/../public/favicon.ico" width="64" height="64"></Image>
+        <Image
+          src="/../public/favicon.ico"
+          width="64"
+          height="64"
+          alt="Icon"
+        ></Image>
         <h1 className="text-3xl">Log-in or Create an Account</h1>
         <form className="pt-12 inline-block	">
           <div className="form-group w-customlogin py-2">
