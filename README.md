@@ -1,5 +1,7 @@
 This is a Next.js entertainment app created for posting and liking music.
 
+Contact: zhang.nicholas136@gmail.com
+
 ## Web Application
 
 This application is hosted on Heroku and can be found here: https://audioparty.herokuapp.com/
