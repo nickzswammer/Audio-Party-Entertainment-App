@@ -129,17 +129,16 @@ export default function Home() {
   const [uploads, setUploads] = useState([]);
 
   const ref = firebase.firestore().collection("uploads");
-  function getUploads() {
-    ref.onSnapshot((querySnapshot) => {
-      const items = [];
-      querySnapshot.forEach((doc) => {
-        items.push(doc.data());
-      });
-      setUploads(items);
-    });
-  }
-
   useEffect(() => {
+    function getUploads() {
+      ref.onSnapshot((querySnapshot) => {
+        const items = [];
+        querySnapshot.forEach((doc) => {
+          items.push(doc.data());
+        });
+        setUploads(items);
+      });
+    }
     getUploads();
   }, []);
 
