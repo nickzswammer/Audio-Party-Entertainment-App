@@ -99,7 +99,6 @@ export default function Home() {
         username: userName,
         songlink: link,
         likes: 0,
-        timestamp: firebase.firestore.FieldValue.serverTimestamp(),
       })
 
       .then(() => {
@@ -178,10 +177,6 @@ export default function Home() {
 
                   <div>
                     <LikeButton id={upload.id} namespace={upload.songName} />
-                  </div>
-
-                  <div className="mt-2">
-                    <p>Uploaded On: {upload.timestamp.toDate().toString()} </p>
                   </div>
 
                   <ReactPlayer
