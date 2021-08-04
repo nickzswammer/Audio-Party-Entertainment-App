@@ -35,8 +35,8 @@ export default function Footer() {
 
         <div className="text-center p-3">
           © 2021 Copyright:
-          <a className="text-dark" href="https://mdbootstrap.com/">
-            MDBootstrap.com
+          <a className="text-dark" href="https://github.com/nickzswammer">
+            Nicholas Zhang
           </a>
         </div>
       </footer>
