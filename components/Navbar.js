@@ -94,7 +94,7 @@ export default function Navbar() {
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
           <a className="navbar-brand">
-            <div className="float-right pl-4 text-3xl pt-2">Audio Party</div>
+            <div className="float-right pl-4 text-3xl">Audio Party</div>
           </a>
 
           <button
