@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.margin-container {
+  margin-left: 40%;
+}
+
+.music-banner {
+  background-image: linear-gradient(
+      rgba(39, 39, 39, 0.527),
+      rgba(36, 36, 36, 0.5)
+    ),
+    url("../public/music-banner.jpeg");
+  background-position-y: 50%;
+}
+
+.circle-button {
+  border-radius: 50%;
+}
+
+.button-add {
+  transition: 0.2s;
+}
+
+body {
+  background-color: rgb(240, 240, 240) !important;
+}
+
+.border-on-bottom {
+  border-bottom: 2px solid rgb(190, 190, 190);
+}
