@@ -163,6 +163,9 @@ export default function Home() {
                 className="bg-white mx-48 p-11 shadow-md border-on-bottom  my-2"
               >
                 <div>
+                  <div className="float-left pr-9 text-2xl">
+                    <LikeButton id={upload.id} namespace={upload.songName} />
+                  </div>
                   <div className="text-blue-500 cursor-pointer hover:text-blue-800 inline-block">
                     <Link href={upload.songlink} passHref>
                       <h2 className="text-2xl mb-2">
@@ -175,13 +178,9 @@ export default function Home() {
                     <p>From: {upload.username}</p>
                   </div>
 
-                  <div>
-                    <LikeButton id={upload.id} namespace={upload.songName} />
-                  </div>
-
                   <ReactPlayer
-                    className="float-right relative bottom-24"
-                    width="1000px"
+                    className="float-right relative bottom-16"
+                    width="800px"
                     height="50px"
                     controls="true"
                     config={{
