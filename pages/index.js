@@ -165,7 +165,7 @@ export default function Home() {
               >
                 <div>
                   <div className="text-blue-500 cursor-pointer hover:text-blue-800 inline-block">
-                    <Link href={upload.songlink}>
+                    <Link href={upload.songlink} passHref>
                       <h2 className="text-2xl mb-2">
                         {upload.songname} - {upload.artistName}
                       </h2>
